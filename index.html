@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<head>
+<style type="text/css">
+.STYLE2 {
+    font-size: 14pt;
+    font-family: "Book Antiqua";
+}
+</style>
+
+<title>Audio samples from "DeviceTTS: A Small-Footprint, Fast, Stable Network for On-Device Text-to-Speech"</title>
+</head>
+
+<body>
+<font size=5>Audio samples from "DeviceTTS: A Small-Footprint, Fast, Stable Network for On-Device Text-to-Speech"</font>
+<br><br>
+<font size=4>Authors: Zhiying Huang, Hao Li, Ming Lei</font>
+<br><br>
+<font size=4>Abstract: With the number of smart devices increasing, the demand for on-device text-to-speech (TTS) increases rapidly. In recent years, many prominent End-to-End TTS methods have been proposed, and have greatly improved the quality of synthesized speech. However, to ensure the qualified speech, most TTS systems depend on large and complex neural network models, and it's hard to deploy these TTS systems on-device. In this paper, a small-footprint, fast, stable network for on-device TTS is proposed, named as DeviceTTS. DeviceTTS makes use of a duration predictor as a bridge between encoder and decoder so as to avoid the problem of words skipping and repeating in Tacotron. As we all know, model size is a key factor for on-device TTS. For DeviceTTS, Deep Feedforward Sequential Memory Network (DFSMN) is used as the basic component. Moreover, to speed up inference, mix-resolution decoder is proposed for balance the inference speed and speech quality. Experiences are done with WORLD and LPCNet vocoder. Finally, with only 1.4 million model parameters and 0.099 GFLOPS, DeviceTTS achieves comparable performance with Tacotron and FastSpeech. As far as we know, the DeviceTTS can meet the needs of most of the devices in practical application.</font>
+<br>
+<br><hr><br>
+<font size=4><b>Audio Samples:</b></font><br>
+<br>
+<font size=4><b>1. The female native Mandarin speaker’s voices from professional records</b></font><br>
+<br>
+<font size=3><i>Text: 三是着力加快转型升级。</i></font>
+<p><audio controls src="./wav/recording/001226.wav"></audio></p>
+<font size=3><i>Text: 中国代表团仍由外交部副部长王毅率领。</i></font>
+<p><audio controls src="./wav/recording/001433.wav"></audio></p>
+<font size=3><i>Text: 湘财证券其余股东同样将从中获利。</i></font>
+<p><audio controls src="./wav/recording/001739.wav"></audio></p>
+<br>
+<font size=4><b>2. Audio quality of different systems with WORLD vocoder.</b></font><br>
+<br>
+<font size=3><i>Text: 盲目地把股权大头拱手相让，绝非好事。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>Tacotron</td>
+            <td><p><audio controls src="./wav/Audio_quality_WORLD/Tacotron/11.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>FastSpeech</td>
+            <td><p><audio controls src="./wav/Audio_quality_WORLD/FastSpeech/11.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Audio_quality_WORLD/DeviceTTS/11.wav" ></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 现在看天上的星星总是觉得没有小时候看到的多。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/Tacotron/85.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/FastSpeech/85.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/DeviceTTS/85.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<font size=3><i>Text: 先后成立了十六个专业合作社，二十四个流通合作社和开发公司。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/Tacotron/3.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/FastSpeech/3.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/Audio_quality_WORLD/DeviceTTS/3.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br><br>
+<font size=4><b>3. Audio Quality of different systems with LPCNet vocoder</b></font><br>
+<br>
+<font size=3><i>Text: 消费者需要正确的引导。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>Tacotron</td>
+            <td><p><audio controls src="./wav/Audio_quality_LPCNet/Tacotron/17.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>FastSpeech</td>
+            <td><p><audio controls src="./wav/Audio_quality_LPCNet/FastSpeech/17.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Audio_quality_LPCNet/DeviceTTS/17.wav" ></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 儿子一气之下没有去，靠自学考上了函授大学。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/Tacotron/8.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/FastSpeech/8.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/DeviceTTS/8.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<font size=3><i>Text: 我送给他的书刊画片，他都珍藏着，一片纸也舍不得丢掉。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/Tacotron/5.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/FastSpeech/5.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/Audio_quality_LPCNet/DeviceTTS/5.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br><br>
+<font size=4><b>4. Ablation studies for MR decoder (WORLD)</b></font><br>
+<br>
+<font size=3><i>Text: 目前上海银行卡支付时可能会出现未到账的情况。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS/40.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_wo_MR</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS_wo_MR/40.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 职业技术培训的网络遍及全区城乡。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS/12.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_wo_MR</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS_wo_MR/12.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 人生不是你得到了或失去了什么而是经历了什么。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS/82.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_wo_MR</td>
+            <td><p><audio controls src="./wav/Ablation _MR_WORLD/DeviceTTS_wo_MR/82.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<font size=4><b>5. Ablation studies for AR network (WORLD)</b></font><br>
+<br>
+<font size=3><i>Text: 信用卡还款至平安银行的款项目前存在延迟到账的情况。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS/27.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_non_AR</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS_non_AR/27.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 我送给他的书刊画片，他都珍藏着，一片纸也舍不得丢掉。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS/5.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_non_AR</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS_non_AR/5.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 避免把幸运的成功习惯性地归因于自己的聪明与智谋。</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>DeviceTTS</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS/87.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS_non_AR</td>
+            <td><p><audio controls src="./wav/Ablation _AR_WORLD/DeviceTTS_non_AR/87.wav"></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<br>
+<font size=4><b>6. Audio quality of long utterances with different systems</b></font><br>
+<br>
+<font size=3><i>Text: 亲爱的客户，由于网络原因，目前部分地区客户使用浙江省农村信用社联合社银行卡支付时可能会出现未到账的情况，请您在周日下午十八点后关注资金到账情况！</i></font>
+<table border=1>
+    <tbody>
+        <tr>
+            <td width=120>Tacotron</td>
+            <td><p><audio controls src="./wav/long_WORLD/Tacotron/23.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>FastSpeech</td>
+            <td><p><audio controls src="./wav/long_WORLD/FastSpeech/23.wav"></audio></p></td>
+        </tr>
+        <tr>
+            <td>DeviceTTS</td>
+            <td><p><audio controls src="./wav/long_WORLD/DeviceTTS/23.wav" ></audio></p></td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<font size=3><i>Text: 飘荡在空中的青色光点，先是凝结成了粉末般大小，而后一块块青色的粉末又凝聚成了拳头般的大小，然后，就再也没有产生变化了。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/long_WORLD/Tacotron/69.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/long_WORLD/FastSpeech/69.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/long_WORLD/DeviceTTS/69.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<font size=3><i>Text: 北京房控政策出来以后，不到一周就有两个人跟我说有钱不知道怎么投资了，有效果啊，看来房子跌只是时间问题。</i></font>
+<table border=1>
+	<tbody>
+		<tr>
+			<td width=120>Tacotron</td>
+			<td><p><audio controls src="./wav/long_WORLD/Tacotron/83.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>FastSpeech</td>
+			<td><p><audio controls src="./wav/long_WORLD/FastSpeech/83.wav"></audio></p></td>
+		</tr>
+		<tr>
+			<td>DeviceTTS</td>
+			<td><p><audio controls src="./wav/long_WORLD/DeviceTTS/83.wav" ></audio></p></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+</body>
+</html>
